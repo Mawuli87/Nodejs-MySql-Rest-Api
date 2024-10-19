@@ -4,7 +4,10 @@
   "description": "Node js mysql admin",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts"
+    "start": "nodemon src/index.ts",
+    "roles:seed": "ts-node src/seeder/role.seeder.ts",
+    "products:seed": "ts-node src/seeder/product.seeder.ts",
+    "orders:seed": "ts-node src/seeder/order.seeder.ts"
   },
   "author": "Mawuli",
   "license": "ISC",
@@ -14,6 +17,7 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12",
     "@types/node": "^22.7.4",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
@@ -27,6 +31,7 @@
     "express": "^4.21.0",
     "express-validation": "^4.1.1",
     "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
     "mysql2": "3.9.8",
     "reflect-metadata": "^0.2.2",
     "typeorm": "^0.3.20"
